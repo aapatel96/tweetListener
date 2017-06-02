@@ -129,7 +129,7 @@ def main():
     updater.start_webhook(listen="0.0.0.0",
                       port=PORT,
                       url_path=TOKEN)
-    updater.bot.set_webhook("<HEROKU_URL>" + TOKEN)
+    updater.bot.set_webhook("https://twittertrendsbot.herokuapp.com/" + TOKEN)
 ##    updater.start_polling()
     updater.idle()
 
